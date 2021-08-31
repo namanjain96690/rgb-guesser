@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Tamma 2', cursive;
+    background-color: rgb(114, 241, 188)
+}
+header{
+    background-color: rgb(228, 96, 96);
+    text-align: center;
+    width: 100%;
+}
+header h1{
+    color: #fff;
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+header span{
+    font-size: 4rem;
+    letter-spacing: 0.2em;
+}
+.b{
+    
+    background-color: #fff;
+}
+.nav{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.nav button{
+    line-height: 80%;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+#active{
+    background-color: rgb(228, 96, 96);
+    color: #fff;
+}
+.btn{
+    height: 100%;
+}
+.nav button, .nav span{
+    outline: none;
+    border: none;
+    height: 100%;
+    font-size: 1em;
+    color: rgb(228, 96, 96);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav span{
+    margin-top: 20px;
+}
+.container{
+    margin: 40px auto ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:40%;
+    /* max-height: 200px;  */
+    /* border: 2px solid red; */
+}
+.cards{
+    min-width: 150px;
+    max-width: 170px;
+    width:30%;
+    margin: 10%;  
+    height: 170px;
+    margin: 20px;
+    border-radius: 40px;
+    background-color: seashell;
+}
+
+@media (max-width : 850px){
+    header span{
+        font-size: 1.5em;
+    }  
+    .nav{
+        width: 90%;        
+    }
+    .container{
+        margin: 10px auto ;
+        width:90%;       
+    }
+    .cards{
+        min-width: 100px;
+        max-width: 180px;
+        height: 120px;
+        margin: 20px;
+    }
+    
+    
+}
